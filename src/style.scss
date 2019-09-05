@@ -1,0 +1,30 @@
+.card-root-container {
+    h4 {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 30px;
+        text-transform: uppercase;
+        @media (max-width: 768px) {
+            font-weight: bolder;
+            margin-top: 20px;
+            text-transform: capitalize;
+        }
+    }
+    .info-panel-inner {
+        padding-top: 10px;
+        .rotation-select {
+            padding: 1%;
+            .react-select-root {
+                display: inline-block;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .image-container {
+            text-align: center;
+            .info-card {
+                margin: 20px;
+            }
+        }
+    }
+}
