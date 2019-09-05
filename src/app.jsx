@@ -3,9 +3,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactSelect from 'react-select';
 import _ from "lodash";
-import * as serviceWorker from './serviceWorker';
 
-const CARDS_LIST = ["EM-TRANSITION TO DISCIPLINE", "EM-CORE", "EM-FOUNDATION",
+const CARDS_LIST = ["EM-TRANSITION TO DISCIPLINE", "EM-FOUNDATIONS", "EM-CORE",
   "EM-TRANSITION TO PRACTICE", "ANESTHESIA",
   "CARDIOLOGY", "INTENSIVE CARE", "GENERAL SURGERY", "GENERAL INTERNAL MEDICINE",
   "NEUROLOGY", "OPTHALMOLOGY", "ORTHOPEDICS", "PLASTIC SURGERY",
@@ -56,7 +55,7 @@ class App extends Component {
       imageName = ['EM-C-1', 'EM-C-2', 'EM-C-3'];
       isMulti = true;
     }
-    else if (imageName == 'EM-FOUNDATION') {
+    else if (imageName == 'EM-FOUNDATIONS') {
       imageName = 'EM-F';
     }
     else if (imageName == 'EM-TRANSITION TO PRACTICE') {
@@ -95,8 +94,3 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
